@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.medium.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_daisyFragment"
+            app:destination="@id/daisyFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_hydrangeaFragment"
+            app:destination="@id/hydrangeaFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_roseFragment"
+            app:destination="@id/roseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daisyFragment"
+        android:name="com.example.medium.DaisyFragment"
+        android:label="fragment_daisy"
+        tools:layout="@layout/fragment_daisy" />
+    <fragment
+        android:id="@+id/roseFragment"
+        android:name="com.example.medium.RoseFragment"
+        android:label="fragment_rose"
+        tools:layout="@layout/fragment_rose" />
+    <fragment
+        android:id="@+id/hydrangeaFragment"
+        android:name="com.example.medium.HydrangeaFragment"
+        android:label="fragment_hydrangea"
+        tools:layout="@layout/fragment_hydrangea" />
+</navigation>
